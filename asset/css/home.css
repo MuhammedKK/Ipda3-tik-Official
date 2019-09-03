@@ -11,7 +11,6 @@
     -o-box-sizing:border-box;
     box-sizing:border-box;
     font-family:'Cairo', sans-serif;
-    overflow:hidden;
 }
 
 body {
@@ -67,6 +66,10 @@ ul, ol {
 .card-hidden {
     visibility:hidden;
 }
+
+.lead{line-height: 1.8;font-size: 16px;}
+
+h2{font-size:32px !important;}
 
 /* End Global Rules  */
 
@@ -125,10 +128,12 @@ header {
 }
 
 header .header-content h1 {
-    font-size:50px;
-    padding-top:60px;
-    word-spacing:3px
+    font-size: 37px;
+    padding-top: 60px;
+    word-spacing: 3px;
+    line-height: 1.8;
 }
+
 
 /* End Header Section */
 
@@ -144,12 +149,17 @@ header .header-content h1 {
 }
 
 .about p {
+    font-size:22px;
     margin-top:40px;
     line-height:1.8
 }
 
 .about .about-img {
     margin-left:50px;
+}
+.about .about-img img {
+    max-width: 80%;
+    margin: auto;
 }
 /* End About Section */
 
@@ -235,7 +245,7 @@ header .header-content h1 {
     width:100%;
     border-bottom-right-radius:20px;
     border-bottom-left-radius:20px;
-    max-height:281px;
+    max-height:230px;
 }
 
 .portfolio .simples .simples-card .website {
@@ -303,6 +313,9 @@ header .header-content h1 {
     font-size:20px;
     box-shadow:1px 1px 5px 2px #CCC;
 }
+
+
+.articles .main-btn:hover{color:var(--main-color);}
 
 /* End Articles Section */
 
@@ -386,7 +399,7 @@ footer .foot-logo .foot-desc h3 {
 }
 
 footer .foot-logo p {
-    font-size:27px;
+    font-size:23px;
     margin:30px 0
 }
 
@@ -446,14 +459,30 @@ footer .foot-img {
     }
 
     header .header-content h1 {
-        font-size:40px;
+        font-size:32px;
         text-align: center;
         padding-top:40px;
         margin-bottom:50px;
         line-height:1.8
     }
 
+    .header-img img {
+        width:100%;
+    }
+
+     h2{font-size: 29px !important;}
+
     /* End Header Section */
+
+    /* Start ABout Section */
+    .about p {
+        font-size: 15px;
+        margin-top: 40px;
+        line-height: 1.8;
+        text-align: center;
+    }
+    .about .about-img {margin-left:0} 
+    /* End ABout Section */
 
     /* Start Portfolio Section */
 
@@ -480,7 +509,7 @@ footer .foot-img {
         -ms-border-radius:20px;
         -o-border-radius:20px;
         box-shadow:-1px 1px 5px 1px #999;
-        margin:30px 50px;
+        margin:30px 8px;
     }
     .articles .box p {
         margin:20px 0 ;
@@ -508,54 +537,59 @@ footer .foot-img {
     
 
     /* End Articles Section */
+
+    /* Start Footer Section */
+    footer .foot-logo p {
+        font-size: 17px
+    }
+
+    footer .foot-logo .social-icons i{
+        font-size: 28px;
+    }
+    /* End Footer Section */
 }
-
-
 
 /* Start Small Screen */
-/*
-@media (min-width:768px) and (max-width:991px) {
-    /* Start Header Section */
-/*
-    header .header-content  {
-        width:100%;
-        margin-bottom:30px
-    }
 
+@media (min-width:768px) and (max-width:991px) {
+
+    /* Start Header Secction */
+    
     header .header-content h1 {
-        font-size:60px;
+        font-size: 37px;
         text-align: center;
-        padding-top:40px;
-        margin-bottom:50px;
+        margin-bottom:55px;
         line-height:1.8
     }
+    .header-img img {
+        width:100%;
+    }
+    .about p{text-align: center}
 
-    header .header-img img{
-        width: 100%;
-        margin:auto;
-    } 
-
-    /* End Header Section */
+    .about-img img {
+        width: 65%;
+        margin: auto;
+    }
+    
+    h2{font-size: 30px !important;}
+    /* End Header Secction */
 
     /* Start Portfolio Section */
-/*
-
-    .portfolio .simples .simples-card {
-        max-width:400px;
-        margin:0 auto 30px;
+    .main-btn{font-size: 20px !important;}
+    .portfolio .simples .simples-card,
+    .articles .box
+    {
+        max-width: 60%;
+        margin: auto;
+        margin-bottom: 30px;
     }
-
     /* End Portfolio Section */
 
-    /* Start Articles Section */
+    /* Start Articles Section*/
+    
+    /* End Articles Section*/
 
-
-
-
-    /* End Articles Section */
 }
-
-
 
 
 

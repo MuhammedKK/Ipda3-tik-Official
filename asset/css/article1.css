@@ -44,3 +44,21 @@
 
 
 /* End Override On Articles */
+
+/* Start Media Queries */
+
+@media (max-width: 767px) {
+    .articles .boxes h2 {
+         font-size: 22px !important
+    }
+    .articles .boxes .box{
+        padding:0 0!important;
+        margin: 0;
+    }
+    .articles .boxes .box img {
+        margin-top: 0;
+
+    }
+}
+
+/* End Media Queries */
